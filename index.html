@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/TH.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <title>Tarek Houamed</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <style>
+      .link-underline {
+        border-bottom-width: 0;
+        background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+        background-size: 0 1px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size .3s ease-in-out;
+      }
+    
+      .link-underline-black {
+        background-image: linear-gradient(transparent, transparent), linear-gradient(#FF9636, #FF9636)
+      }
+    
+      .link-underline:hover {
+        background-size: 100% 1px;
+        background-position: 0 100%
+      }
+      h2.numbered-heading::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: black;
+  margin-top: 10px;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fadeInAndSlideFast {
+  opacity: 0;
+  animation: fadeIn 500ms linear forwards, slideIn 500ms ease-out forwards;
+  animation-delay: 500ms;
+}
+
+.fadeInAndSlide {
+  opacity: 0;
+  animation: fadeIn 600ms linear forwards, slideIn 600ms ease-out forwards;
+  animation-delay: 1000ms;
+}
+
+.fadeInAndSlideSlow {
+  opacity: 0;
+  animation: fadeIn 800ms linear forwards, slideIn 800ms ease-out forwards;
+  animation-delay: 1500ms;
+}
+
+
+
+.fadeInAndSlideNavbar{
+  opacity: 0;
+  animation: fadeIn 200ms linear forwards, slideIn 200ms ease-out forwards;
+}
+.fadeInAndSlideButton{
+  opacity: 0;
+  animation: fadeIn 900ms linear forwards, slideIn 900ms ease-out forwards;
+  animation-delay: 2000ms;
+}
+
+
+    </style>
+  </body>
+</html>
+
